@@ -99,7 +99,7 @@ $result = mysqli_query($con, $query);
         <?php
         while ($row = mysqli_fetch_assoc($result)) {
             echo "<div class='product'>";
-            echo "<img src='admin/" . $row['image'] . "' alt='" . $row['name'] . "'>";
+            echo "<img src='" . $row['image'] . "' alt='" . $row['name'] . "'>";
             echo "<h3>" . $row['name'] . "</h3>";
             echo "<p>Price: Rs. " . number_format($row['price']) . "</p>";
 
